@@ -1,0 +1,17 @@
+model {
+    mdm = app 'MDM' {
+        description 'Référentiel de données produits'
+    }
+
+    mdm -> pcm 'MDMPCM001' {
+        description 'Pre-validation gupt'
+    }
+
+    mdm -> pcm 'MDMPCM002' {
+        description 'Pre-validation PCM'
+    }
+
+    mdm -> pcm 'MDMPCM003' {
+        description 'Intégration PCM'
+    }
+}

@@ -1,0 +1,14 @@
+model{
+    ncg = system 'NCG' {
+        description 'Système de gestion des commandes'
+    }
+    ncg -> pcm 'NCGPCM001' {
+        description 'Flux FTP ??'
+    }
+    ncg -> pcm 'NCGPCM002' {
+        description 'Codification Admin envoi NCG vers PCM'
+    }
+    ncg -> pcm 'NCGPCM003' {
+        description 'Codification Produits envoi NCG vers PCM'
+    }
+}

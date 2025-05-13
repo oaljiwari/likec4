@@ -1,139 +1,139 @@
-model {
+// model {
 
-  amazon = externalSystem 'Amazon' {
-    description: 'Cloud and managed services provider'
+//   amazon = externalSystem 'Amazon' {
+//     description: 'Cloud and managed services provider'
 
-    rds = container 'RDS' {
-      description: 'Relational Database Service'
+//     rds = container 'RDS' {
+//       description: 'Relational Database Service'
 
-      pg = component 'PostgreSQL' {
-        #db
+//       pg = component 'PostgreSQL' {
+//         #db
 
-        tblUsers = table 'Users Table' {
-          #deprecated
-          description: '
-            Table with registered users.
-            Contains references to Identity provider.
-            [deprecated, moving to Aurora]
-          '
-        }
-      }
+//         tblUsers = table 'Users Table' {
+//           #deprecated
+//           description: '
+//             Table with registered users.
+//             Contains references to Identity provider.
+//             [deprecated, moving to Aurora]
+//           '
+//         }
+//       }
 
-    }
+//     }
 
-    sqs = container {
-      title: 'SQS'
-      description: 'Simple Queue Service'
+//     sqs = container {
+//       title: 'SQS'
+//       description: 'Simple Queue Service'
 
-      queue queue1 'Raw Data' {
-        description: 'Queue with raw data'
-      }
+//       queue queue1 'Raw Data' {
+//         description: 'Queue with raw data'
+//       }
 
-      queue queue2 'Enriched Data' {
-        description: '
-          Filtered and preprocessed data
-          Ready for further processing
-        '
-      }      
-    }
+//       queue queue2 'Enriched Data' {
+//         description: '
+//           Filtered and preprocessed data
+//           Ready for further processing
+//         '
+//       }      
+//     }
 
-    lambdas = container {
-      title: 'Lambdas'
-      description: 'Serverless compute'
+//     lambdas = container {
+//       title: 'Lambdas'
+//       description: 'Serverless compute'
 
-      fn_enrich = lambda 'Enrichment' {
-        description: '
-          Enriches raw data
-          by adding additional information
-        '
-      }
+//       fn_enrich = lambda 'Enrichment' {
+//         description: '
+//           Enriches raw data
+//           by adding additional information
+//         '
+//       }
 
-      fn_enrich -> queue1 "reads raw data"
-      fn_enrich -> queue2 "writes enriched data"
-    }
-  }
+//       fn_enrich -> queue1 "reads raw data"
+//       fn_enrich -> queue2 "writes enriched data"
+//     }
+//   }
 
-}
+// }
 
-views {
+// views {
 
-  view amazon of amazon {
-    title "Amazon"
+//   view amazon of amazon {
+//     title "Amazon"
 
-    include
-      *,
-      cloud,
-      cloud.* -> amazon.*,
+//     include
+//       *,
+//       cloud,
+//       cloud.* -> amazon.*,
 
-    style * {
-      color secondary
-    }
-    style amazon, cloud {
-      color muted
-    }
-    style amazon.* {
-      color green
-    }
-  }
+//     style * {
+//       color secondary
+//     }
+//     style amazon, cloud {
+//       color muted
+//     }
+//     style amazon.* {
+//       color green
+//     }
+//   }
 
-  view amazon_sqs of sqs {
-    title 'Amazon: SQS'
+//   view amazon_sqs of sqs {
+//     title 'Amazon: SQS'
 
-    include
-      *,
-      amazon,
-      cloud,
-      cloud.next.* -> sqs.*
+//     include
+//       *,
+//       amazon,
+//       cloud,
+//       cloud.next.* -> sqs.*
 
-    style * {
-      color secondary
-    }
-    style amazon, cloud {
-      color muted
-    }
-    style sqs, sqs.* {
-      color green
-    }        
-  }
+//     style * {
+//       color secondary
+//     }
+//     style amazon, cloud {
+//       color muted
+//     }
+//     style sqs, sqs.* {
+//       color green
+//     }        
+//   }
 
-  view amazon_lambdas of lambdas {
-    title 'Amazon: Lambdas'
+//   view amazon_lambdas of lambdas {
+//     title 'Amazon: Lambdas'
     
-    include
-      *,
-      amazon,
-      amazon.sqs,
-      -> amazon.sqs.*
+//     include
+//       *,
+//       amazon,
+//       amazon.sqs,
+//       -> amazon.sqs.*
 
-    style * {
-      color secondary
-    }
-    style amazon {
-      color muted
-    }
-    style lambdas, lambdas.* {
-      color green
-    }      
-  }
+//     style * {
+//       color secondary
+//     }
+//     style amazon {
+//       color muted
+//     }
+//     style lambdas, lambdas.* {
+//       color green
+//     }      
+//   }
 
-  view amazon_rds of amazon.rds {
-    title 'Amazon: RDS'
+//   view amazon_rds of amazon.rds {
+//     title 'Amazon: RDS'
 
-    include
-      *,
-      cloud,
-      cloud.* -> amazon.rds.pg.*,
-      cloud.* -> amazon.rds.aurora.*,
+//     include
+//       *,
+//       cloud,
+//       cloud.* -> amazon.rds.pg.*,
+//       cloud.* -> amazon.rds.aurora.*,
       
-    style * {
-      color muted
-    }
-    style cloud.* {
-      color secondary
-    }
-    style amazon.rds.* {
-      color green
-    }
-  }  
+//     style * {
+//       color muted
+//     }
+//     style cloud.* {
+//       color secondary
+//     }
+//     style amazon.rds.* {
+//       color green
+//     }
+//   }  
 
-}
+// }

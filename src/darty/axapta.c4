@@ -1,0 +1,9 @@
+model {
+    axapta = app 'Axapta' {
+        description 'ERP utilisé par Caprofem'
+  }
+
+  axapta -> pcm 'AXAPCM001' {
+    description 'Récupération des caractéristiques produits (SQL)'
+  }
+}

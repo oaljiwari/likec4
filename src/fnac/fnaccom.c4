@@ -1,0 +1,54 @@
+model {
+    fnaccom = system 'Fnac.com' {
+    description 'Le site web de la Fnac'
+    
+    component fnaccomid 'FnacComId' {
+      description '
+        The Fnac.com ID is the unique
+        identifier of a Fnac.com user
+      '
+    }
+
+    component fnaccomaccount 'FnacComAccount' {
+      description '
+        The Fnac.com account is the unique
+        account of a Fnac.com user
+      '
+    }
+
+    component fnaccomorderpipe 'FnacComOrderPipe' {
+      description '
+        The Fnac.com order pipe is the
+        unique order pipe of a Fnac.com user
+      '
+    }
+
+    component fnaccomlogin 'FnacComLogin' {
+      description '
+        The Fnac.com login is the unique
+        login of a Fnac.com user
+      '
+    }
+
+    component fnaccomnav 'FnacComNav' {
+      description '
+        The Fnac.com nav is the unique
+        navigation of a Fnac.com user
+      '
+    }
+
+    pcm -> this 'FLUX_PCM_FNACCOM_001'
+  }
+}
+
+views {
+    view fnaccom of fnaccom {
+    title "Fnac.com"
+    description 'Fnac.com is the website of the Fnac'
+    include
+      *,
+      fnaccom,
+      fnaccomid,
+      fnaccomaccount    
+  }
+}

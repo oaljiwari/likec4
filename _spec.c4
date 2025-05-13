@@ -6,11 +6,25 @@ specification {
     }
   }
 
+  element system {
+    style {
+      shape rectangle
+      color primary
+    }
+  }
+
   element softwareSys
 
   element externalSystem {
     style {
       color secondary
+    }
+  }
+
+  element webapp {
+    style {
+      shape browser
+      color primary
     }
   }
 
