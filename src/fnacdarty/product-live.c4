@@ -1,0 +1,9 @@
+model {
+    productlive = app 'Product-Live' {
+        description "Portail R-One branché sur MDM permettant aux fournisseurs et distributeurs d'injecter/saisir leur référentiel de produits
+Référencement + Enrichissement"
+    }
+    productlive -> pcm 'PROPCM001' {
+        description 'Injection des données produits des fournisseurs'
+    }
+}

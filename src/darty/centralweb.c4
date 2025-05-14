@@ -1,0 +1,7 @@
+model {
+    centralweb = app 'CentralWeb' {
+        description "L'agence digitale CentralWeb vous apporte des solutions de communication et de marketing digital pour site web.
+Elle récupère les données des fiches produits, leur dispo, à but de référencement commercial et d'export aux différents sites tels que Google Shopping, Kelkoo, etc.
+Centralweb permet de diffuser l'offre D.com sur les marketplaces partenaires"
+    }
+}

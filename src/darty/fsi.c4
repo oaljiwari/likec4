@@ -1,0 +1,5 @@
+model {
+    fsi = app 'FSI' {
+        description 'FSI recoit toutes les photos et gère le zoom'
+    }
+}

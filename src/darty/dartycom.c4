@@ -1,0 +1,6 @@
+model {
+    dartycom = app 'Darty.com' {
+        description 'Site e-commerce Darty.com'
+    }
+    
+}

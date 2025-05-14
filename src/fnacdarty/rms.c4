@@ -1,0 +1,9 @@
+model {
+    rms = app 'RMS' {
+        description "Outil de gestion des commandes et des approvisionnements centraux de la Fnac (et Darty sur les produits Stock Unique)"
+    }
+
+    rms -> pcm 'RMSPCM001' {
+        description '[RU-16] OK valo de RMS vers PCM (Référentiel unique)'
+    }
+}

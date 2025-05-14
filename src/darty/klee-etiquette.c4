@@ -1,0 +1,5 @@
+model {
+    kleeetiquette = app 'Klee Etiquette' {
+        description 'Application pour gérer les éditions / impressions des étiquettes'
+    }
+}

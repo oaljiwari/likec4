@@ -1,0 +1,9 @@
+model {
+    replicator = app 'Replicator' {
+        description "Réplicateur de donnée de base à base entre les différentes plateformes, unix, MVS et AS400
+(Innovente, darty.com, PNEM, NCG et PCM)"
+    }
+    replicator -> pcm 'REPPCM001' {
+        description 'Réplication de bases à bases'
+    }
+}

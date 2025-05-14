@@ -1,0 +1,5 @@
+model{
+    siebel = app 'Siebel' {
+        description 'Siebel CRM'
+    }
+}

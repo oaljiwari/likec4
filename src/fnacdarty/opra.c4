@@ -1,0 +1,8 @@
+model {
+    opra = app 'OPRA' {
+        description 'Fnac & Darty (pour stock unique)'
+    }
+    opra -> pcm 'OPRAPCM001' {
+        description '[RU-17] QuickMep (Référentiel unique)'
+    }
+}

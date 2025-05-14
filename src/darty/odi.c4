@@ -1,0 +1,5 @@
+model {
+    odi = app 'ODI' {
+        description 'ETL Oracle Data Integrator'
+    }
+}

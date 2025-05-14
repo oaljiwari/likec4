@@ -1,0 +1,8 @@
+model {
+
+    sapdarty = app{
+        description 'SAP Darty'
+        icon https://www.darty.com/static/img/logo-darty.svg
+        
+    }
+}

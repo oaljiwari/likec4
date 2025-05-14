@@ -5,4 +5,56 @@ model{
       allows us to manage our customers
     '
   }
+
+  pcm -> catalogmagdarty 'PCMCAT001' {
+    description 'Codification des produits'
+  }
+
+  pcm -> centralweb 'PCMCEN001' {
+    description 'envoi Codification pour Marketplace partenaire (Redoute, Google)'
+  }
+  
+  pcm -> dartycom 'PCMDAR001' {
+    description 'Codification envoi vers Darty.com'
+  }
+
+  pcm -> fnaccom 'PCMFNA001' {
+    description 'envoi Codification via indexer pour présenter les offres Darty sur Marketplace Fnac'
+  }
+
+  pcm -> fsi 'PCMFIS001(HTTP)' {
+    description '???'
+  }
+
+  pcm -> fsi 'PCMFIS002(SFTP)' {
+    description '???'
+  }
+
+  pcm -> innovente 'PCMINN001(MQ SERIES)' {
+    description 'Codification des produits'
+  }
+
+  pcm -> kleeetiquette 'PCMKLE001' {
+    description 'Infos produit / Prix'
+  }
+
+  pcm -> ncg 'PCMNCG001(FTP)' {
+    description 'Nouvelle codification des produits'
+  }
+
+  pcm -> ncg 'PCMNCG002' {
+    description '????'
+  }
+
+  pcm -> odi 'PCMIDI001(SQL)' {
+    description 'Photos produits ??'
+  }
+
+  pcm -> sapdarty 'PCMSAP001(MQ SERIES)' {
+    description 'Codification envoi vers SAP'
+  }
+
+  pcm -> siebel 'PCMSIE001' {
+    description 'CCodics éligibles DartyMax'
+  }
 }
