@@ -1,0 +1,18 @@
+views {
+    view refProduitMacro {
+    title 'Référentiel Produit vue Macro'
+    group 'Référentiel Produit vue Macro' {
+    color amber
+    opacity 10%
+
+    include
+       pcm,
+       mdm,
+       metacat,
+       newref,
+       productlive,
+       frontref, 
+       catalog-es
+    }
+  }
+}
