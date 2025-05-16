@@ -39,4 +39,21 @@ view index{
        catalog-es
     }
   }
+
+    dynamic view refproduitFlow {
+        title 'cinématique alimentation référentiel produit'
+        fournisseur -> productlive 'Saisie des produits par le fournisseur'
+        productlive -> mdm 'transfert vers MDM'
+        parallel {
+            mdm -> metacat 'transfert vers Metacat'
+            mdm -> newref 'transfert vers le référentiel produit'
+            mdm -> pcm 'transfert vers PCM'
+        }
+        parallel {
+            newref -> metacat 'transfert vers le catalogue ES'
+            newref -> frontref 'transfert vers le front'
+            metacat -> frontref 'transfert vers le front'
+            pcm -> catalog-es 'transfert vers le catalogue ES'
+    }
+}
 }

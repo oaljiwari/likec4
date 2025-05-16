@@ -1,5 +1,7 @@
 model {
-
+    fournisseur = actor 'Fournisseur' {
+        description 'Fournisseur de produits'
+    }
   
 
   
