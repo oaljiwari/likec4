@@ -1,0 +1,8 @@
+model{
+    extend dartycom {
+        googleretailsearchdarty = component 'Google Retail Search Darty' {
+            description 'Google Retail Search Darty'
+        }
+        
+    }
+}

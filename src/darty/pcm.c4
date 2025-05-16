@@ -1,9 +1,9 @@
 model{
     pcm = app 'PCM' {
     description '
-      The PCM system is the system that
-      allows us to manage our customers
+      Référentiel Produit Hybris
     '
+    technology 'Hybris'
   }
 
   pcm -> catalogmagdarty 'PCMCAT001' {
@@ -56,5 +56,9 @@ model{
 
   pcm -> siebel 'PCMSIE001' {
     description 'CCodics éligibles DartyMax'
+  }
+
+  pcm -> catalog-es 'PCMCAT002' {
+    description 'Codification des produits'
   }
 }

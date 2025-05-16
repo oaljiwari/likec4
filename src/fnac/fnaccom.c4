@@ -38,6 +38,12 @@ model {
     }
 
     pcm -> this 'FLUX_PCM_FNACCOM_001'
+    fnaccomnav -> newref 'FNAFRO001' {
+      description 'Récupération des infos produits'
+    }
+    fnaccomnav -> newref 'MOVFRO001' {
+      description 'Récupération des infos produits Move2Cloud'
+    }
   }
 }
 

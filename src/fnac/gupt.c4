@@ -1,0 +1,12 @@
+model {
+    gupt = app 'Gupt' {
+        description 'Gestion Unitaire des Produits Techniques et Diversification (PEM, Jeux Jouet, Papeterie, Bricolage, Etc…) :
+Référencement des produits,
+Gestion des prix et Promotions,
+Gestion du Stock,
+Gestion des flux de marchandises,
+Génération du CA magasin
+Dispo Magasin pour Fnac.com et FnacShop
+Services de réservation Fnac.com et FnacShop'
+    }
+}

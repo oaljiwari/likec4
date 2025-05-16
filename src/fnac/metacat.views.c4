@@ -1,0 +1,15 @@
+views {
+    view metacat of metacat {
+        title "Metacat"
+        description 'Application de création, mise à jour, enrichissement des produits et de la navigation pour le e-Commerce MarketPlace'
+        include metacat,
+        include newref,
+        include polyglotte,
+        include fnaccom,
+        include fnaccom.fnaccomnav,
+        include mdm,
+        include mdm.mcm-mirakl,
+        include damfnac,
+        include teradata
+      }
+}

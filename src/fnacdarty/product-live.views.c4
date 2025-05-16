@@ -1,0 +1,13 @@
+views {
+    view productlive of productlive{
+        include productlive,
+        include gupt,
+        include pcm,
+        include datastage,
+        include tradeexpress,
+        include biztalkEAI,
+        include mdm,
+        include mdm.mcm-mirakl,
+        include mdm.ipm12,
+    }
+}

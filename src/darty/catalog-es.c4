@@ -1,0 +1,5 @@
+model{
+    catalog-es = database 'Catalog ES' {
+        description 'BDD catalogue produit pour les fronts Web (réplique de NEWREF)'
+    }
+}

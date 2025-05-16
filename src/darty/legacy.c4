@@ -1,0 +1,7 @@
+model {
+    extend dartycom{
+        legacy = component 'Legacy' {
+            description 'Référentiel Produit Hybris'
+        }
+    }
+}

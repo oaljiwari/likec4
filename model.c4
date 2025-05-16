@@ -5,11 +5,3 @@ model {
   
 }
 
-views {
-
-  view index {
-    title "Vue d'ensemble"
-    include
-       *
-  }
-}

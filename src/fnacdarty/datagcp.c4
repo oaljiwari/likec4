@@ -1,0 +1,6 @@
+model {
+    datagcp = component 'Data GCP' {
+        description 'Data GCP'
+        technology 'Java'
+    }
+}

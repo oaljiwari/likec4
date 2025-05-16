@@ -1,0 +1,10 @@
+model{
+    newref = app 'NewRef' {
+        description "Gestion du référentiel,de l'enrichissement et des prix des produits stockés et dématérialisés"
+        technology 'Winforms'
+    }
+
+    newref -> metacat 'NEWMET001' 'Incremental NR/MC'
+    newref -> frontref 'NEWFR001(SQL)' 'Réplication SQL déclenchée toutes les 4h'
+
+}

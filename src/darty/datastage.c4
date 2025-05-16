@@ -1,0 +1,9 @@
+model{
+    datastage = component 'DataStage' {
+        description 'DATASTAGE = ETL utilisé dans le cadre du référencement produit en lien avec MDM'
+    }
+
+    datastage -> productlive 'DATPRO001' {
+        description 'Taxonomie (Référentiel unique)'
+    }
+}

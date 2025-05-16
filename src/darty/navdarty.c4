@@ -1,0 +1,7 @@
+model{
+    extend dartycom {
+        navdarty = component 'Navigation Darty.com' {
+            description 'Navigation Darty.com'
+        }
+    }
+}

@@ -2,8 +2,31 @@ model {
     productlive = app 'Product-Live' {
         description "Portail R-One branché sur MDM permettant aux fournisseurs et distributeurs d'injecter/saisir leur référentiel de produits
 Référencement + Enrichissement"
+        style {
+            icon /resources/icons/fnacdarty.png
+        }
     }
     productlive -> pcm 'PROPCM001' {
         description 'Injection des données produits des fournisseurs'
+    }
+
+    productlive -> tradeexpress 'PRODAT001' {
+        description 'Echange de données informatisé (EDI)'
+    }
+        
+    productlive -> gupt 'PROGUP001' {
+        description 'Injection des données produits des fournisseurs'
+    }
+
+    productlive -> mdm 'PROMDM001' {
+        description 'Injection des données produits des fournisseurs'
+    }
+
+    productlive -> datastage 'PRODAT001' {
+        description 'Import matrice référencement (Référentiel unique)'
+    }
+
+    productlive -> biztalkEAI 'PROGUP001' {
+        description 'Acquittement des articles (Référentiel unique)'
     }
 }

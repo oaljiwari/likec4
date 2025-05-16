@@ -1,0 +1,6 @@
+model {
+    lenglow = component 'Lenglow' {
+        description 'Lenglow'
+        technology 'Java'
+    }
+}

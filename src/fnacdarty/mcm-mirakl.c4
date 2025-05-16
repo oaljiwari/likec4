@@ -1,0 +1,9 @@
+model {
+    extend mdm {
+        mcm-mirakl = app 'MCM Mirakl' {
+        description "Portail SaaS de l'éditeur Mirakl pour que les vendeurs MP référence leurs produits
+L'outil est intégré à MDM"
+    }
+    mcm-mirakl -> metacat 'MCMMET001' 'Fiches produits des vendeurs MP'
+    }
+}

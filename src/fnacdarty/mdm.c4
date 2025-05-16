@@ -14,4 +14,7 @@ model {
     mdm -> pcm 'MDMPCM003' {
         description 'Intégration PCM'
     }
+    mdm -> metacat 'MDMMET001' 'Alimentation informations Produit PT'
+    mdm -> metacat 'MDMMET002' 'Mdm Lot 0'
+    mdm -> newref 'MDMREF001' 'Alimentation informations Produit PT'
 }

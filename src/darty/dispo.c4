@@ -1,0 +1,7 @@
+model {
+    extend dartycom {
+        dispo = component 'Dispo' {
+            description 'Calcule la disponibilité produits pour les applications de vente (dispo vente, modes de délivrance, créneaux de livraison, etc..)'
+        }
+    }
+}

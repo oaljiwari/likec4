@@ -1,0 +1,6 @@
+model{
+    polyglotte = component 'Polyglotte' {
+        description 'Polyglotte'
+        technology 'Java'
+    }
+}

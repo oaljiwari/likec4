@@ -1,0 +1,7 @@
+model {
+    damfnac = component 'DAM FNAC' {
+        description 'Gestion des contenus média (Logique et Physique)'
+    }
+
+    damfnac -> metacat 'DAMMET001' 'Dam Callback MC'
+}

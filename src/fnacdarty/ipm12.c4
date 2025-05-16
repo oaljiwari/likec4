@@ -1,0 +1,8 @@
+model{
+    extend mdm{
+        ipm12 = app 'IPM 12' {
+            description "???"
+        }
+        
+    }
+}

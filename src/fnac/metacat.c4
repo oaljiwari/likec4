@@ -1,0 +1,12 @@
+model {
+    metacat = app 'Metacat' {
+        description 'Application de création, mise à jour, enrichissement des produits et de la navigation pour le e-Commerce MarketPlace'
+        technology 'Winforms'
+    }
+
+    metacat -> lenglow 'METLEN001' 'SEA Produit arbos'
+    metacat -> fnaccom 'METFNA001' 'Replication Metacatalog'
+    metacat -> fnaccom.fnaccomnav 'METFNA002' 'Infos produits pour la fiche article'
+    metacat -> polyglotte 'METPOL001' 'Envoi de description produit pour identification de langue'
+    metacat -> teradata 'METDAT002' 'Caractéristiques et hiérarchies produits'
+}

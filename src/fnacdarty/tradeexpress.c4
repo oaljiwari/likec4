@@ -1,0 +1,6 @@
+model{
+    tradeexpress = component 'Trade Express' {
+        description 'Echange de données informatisé (EDI)
+Tous flux avec nos fournisseurs (commandes, bl, factures, avoirs, stocks, ventes, fiches produits, journaux de mouvement, accusé de réception, dématérialisation fiscale...)'
+    }
+}

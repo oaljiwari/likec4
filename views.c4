@@ -1,25 +1,42 @@
-// views {
+views {
 
-//   view cloud of cloud {
-//     title "Context: Cloud System"
+view index{
+  include *
+}
+  view indexWithRefProduit {
+    title "Vue d'ensemble avec délimitation des Référentiel produit"
+    group 'Référentiel Produit' {
+         color green
+         opacity 20%
 
-//     include
-//       *,
-//       amazon,
-//       -> amazon.*,
+         include
+            pcm,
+            mdm,
+            metacat,
+            newref,
+            productlive,
+            frontref, 
+            catalog-es
+       }
+    include
+       *
+       
+  }
 
-//     style * {
-//       color secondary
-//     }
-//     style cloud, amazon {
-//       color muted
-//     }
-//     style cloud.* {
-//       color green
-//     }   
-//     style supportUser {
-//       color secondary
-//     }   
-//   }
+  view refProduitMacro {
+    title 'Référentiel Produit vue Macro'
+    group 'Référentiel Produit vue Macro' {
+    color amber
+    opacity 10%
 
-// }
+    include
+       pcm,
+       mdm,
+       metacat,
+       newref,
+       productlive,
+       frontref, 
+       catalog-es
+    }
+  }
+}

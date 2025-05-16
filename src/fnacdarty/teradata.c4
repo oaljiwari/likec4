@@ -1,0 +1,5 @@
+model {
+    teradata = system 'Teradata' {
+        description "Le Datawarehouse (DWH) est une base de données centralisée contenant l'historique des données FNAC"
+    }
+}

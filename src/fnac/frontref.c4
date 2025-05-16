@@ -1,0 +1,8 @@
+model{
+    frontref = database 'FrontRef' {
+        description 'BDD catalogue produit pour les fronts Web (réplique de NEWREF)'
+        technology 'SQLSERVER'
+    }
+
+    
+}
