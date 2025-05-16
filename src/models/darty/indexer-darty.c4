@@ -1,0 +1,6 @@
+model {
+    indexerdarty = database 'Indexeur Darty' {
+        description 'Indexeur de produit sur les magasins Darty Intégré dans le client lourd Innovente.'
+        technology 'Couchebase'
+    }
+}

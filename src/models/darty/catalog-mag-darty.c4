@@ -1,5 +1,6 @@
 model {
-    catalogmagdarty = app 'Catalogue Magasin Darty' {
+    catalogmagdarty = database 'Catalogue Magasin Darty' {
         description 'Catalogue de produit sur les magasins Darty Intégré dans le client lourd Innovente.'
+        technology 'ElasticSearch'
     }
 }

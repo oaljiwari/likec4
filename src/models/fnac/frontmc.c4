@@ -1,0 +1,6 @@
+model {
+    frontmc = database 'FrontMC' {
+        description 'BDD catalogue produit'
+
+    }
+}

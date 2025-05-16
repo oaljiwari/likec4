@@ -50,10 +50,10 @@ view index{
             mdm -> pcm 'transfert vers PCM'
         }
         parallel {
-            newref -> metacat 'transfert vers le catalogue ES'
+            newref -> metacat 'transfert vers Metacat'
             newref -> frontref 'transfert vers le front'
-            metacat -> frontref 'transfert vers le front'
-            pcm -> catalog-es 'transfert vers le catalogue ES'
+            metacat -> frontmc 'transfert vers le front'
+            pcm -> catalogmagdarty 'transfert vers le catalogue Magasin Darty'
     }
 }
 }
