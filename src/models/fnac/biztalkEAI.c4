@@ -5,7 +5,6 @@ model{
         style {
             icon https://cdn.iconscout.com/icon/free/png-512/free-biztalk-logo-icon-download-in-svg-png-gif-file-formats--microsoft-server-brands-pack-logos-icons-190763.png?f=webp&w=512
         }
-        
     }
 
     biztalkEAI -> productlive 'BIZPRO001' {

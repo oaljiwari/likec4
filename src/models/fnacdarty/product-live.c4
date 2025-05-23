@@ -3,7 +3,7 @@ model {
         description "Portail R-One branché sur MDM permettant aux fournisseurs et distributeurs d'injecter/saisir leur référentiel de produits
 Référencement + Enrichissement"
         style {
-            icon /resources/icons/fnacdarty.png
+            //icon /resources/icons/fnacdarty.png
         }
     }
     productlive -> pcm 'PROPCM001' {
