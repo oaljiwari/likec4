@@ -1,5 +1,6 @@
 model{
     biztalkEAI = component 'BizTalk EAI' {
+        #etl #fnac
         description 'Outil EAI de gestion des flux inter-applications'
 
         style {

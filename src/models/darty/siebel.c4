@@ -1,5 +1,7 @@
 model{
     siebel = app 'Siebel' {
         description 'Siebel CRM'
+
+        icon https://images.seeklogo.com/logo-png/12/1/siebel-logo-png_seeklogo-126271.png
     }
 }

@@ -74,6 +74,8 @@ specification {
   tag hybris
   tag refproduit
   tag catalog
+  tag bdd
+  tag etl
 
 
   color color-fnaccom #d0a813

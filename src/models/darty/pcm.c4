@@ -2,7 +2,7 @@ model{
     pcm = app 'PCM' {
       #hybris #darty #refproduit
     description 'Référentiel Produit Hybris'
-    //icon ../../resources/icons/darty.png
+    icon https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/find-product-icon.png
     technology 'Hybris'
     link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2675441865/PCM
   }

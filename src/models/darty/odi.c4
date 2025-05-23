@@ -1,5 +1,6 @@
 model {
     odi = app 'ODI' {
         description 'ETL Oracle Data Integrator'
+        icon https://blog.mp3monster.org/wp-content/uploads/2020/09/oracle-data-integrator.png
     }
 }

@@ -1,7 +1,10 @@
 model{
     frontref = database 'FrontRef' {
+        #fnac #catalog #bdd
         description 'BDD catalogue produit pour les fronts Web (réplique de NEWREF)'
         technology 'SQLSERVER'
+
+        icon https://cdn-icons-png.flaticon.com/512/2772/2772128.png
     }
 
     

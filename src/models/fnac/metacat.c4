@@ -3,6 +3,11 @@ model {
         #catalog #fnacdarty
         description 'Application de création, mise à jour, enrichissement des produits et de la navigation pour le e-Commerce MarketPlace'
         technology 'Winforms'
+
+        style {
+            color color-fnac
+            icon https://camo.githubusercontent.com/7a5852e0d1f18252055a865821449c6a45dc1df5b3621f78b48568112cbde677/68747470733a2f2f73732e64616e2e63782f323031372f31302f6368726f6d655f31322d31352e35312e34382e706e67
+        }
     }
 
     metacat -> lenglow 'METLEN001' 'SEA Produit arbos'

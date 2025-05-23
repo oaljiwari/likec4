@@ -1,6 +1,8 @@
 model{
     ncg = system 'NCG' {
         description 'Système de gestion des commandes'
+
+        icon https://cdn2.steamgriddb.com/icon_thumb/aeef2e2263e994f0e586670b49f78117.png
     }
     ncg -> pcm 'NCGPCM001' {
         description 'Flux FTP ??'

@@ -1,8 +1,9 @@
 model {
 
     sapdarty = app{
+        #etl #darty
         description 'SAP Darty'
-        icon https://www.darty.com/static/img/logo-darty.svg
+        icon https://img.icons8.com/?size=50&id=36942&format=png
         
     }
 }
