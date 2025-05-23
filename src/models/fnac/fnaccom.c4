@@ -1,6 +1,8 @@
 model {
     fnaccom = system 'Fnac.com' {
     description 'Le site web de la Fnac'
+
+    //icon ../../resources/icons/fnac.png
     
     component fnaccomid 'FnacComId' {
       description '
