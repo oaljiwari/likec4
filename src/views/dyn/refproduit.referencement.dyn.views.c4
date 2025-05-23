@@ -6,9 +6,9 @@ views {
         rone -> biztalkETL 'transfert vers Biztalk ETL'
         
         parallel {
-            biztalkETL -> gupt 'transfert vers Metacat'
-            biztalkETL -> mdm 'transfert vers le référentiel produit'
-            biztalkETL -> pcm 'transfert vers PCM'
+            biztalkETL -> gupt 'interrogation de la gupt'
+            biztalkETL -> mdm 'interrogation de MDM'
+            biztalkETL -> pcm 'interrogation de PCM'
         }
         parallel {
             gupt -> biztalkETL 'retour vers Biztalk ETL'
@@ -16,6 +16,6 @@ views {
             pcm -> biztalkETL 'retour vers Biztalk ETL'
     }
 
-        pcm -> ncg 'transfert vers NCG'
+        pcm -> ncg 'referencement du produit dans la NCG (si les conditions sont remplies)'
 }
 }

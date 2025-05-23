@@ -9,5 +9,8 @@ views {
         include mdm,
         include mcm-mirakl,
         include mdm.ipm12,
+
+        include fnaccom,
+        include fnaccom.fnaccomnav
     }
 }
