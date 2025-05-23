@@ -8,7 +8,7 @@ views {
         include fnaccom,
         include fnaccom.fnaccomnav,
         include mdm,
-        include mdm.mcm-mirakl,
+        include mcm-mirakl,
         include damfnac,
         include teradata
       }

@@ -1,0 +1,21 @@
+views {
+        dynamic view refproduitRefFlow {
+        title 'cinématique alimentation référentiel produit (Référencement)'
+        fournisseur -> productlive 'Saisie des produits par le fournisseur'
+        productlive -> rone 'flux de données vers R-One'
+        rone -> biztalkETL 'transfert vers Biztalk ETL'
+        
+        parallel {
+            biztalkETL -> gupt 'transfert vers Metacat'
+            biztalkETL -> mdm 'transfert vers le référentiel produit'
+            biztalkETL -> pcm 'transfert vers PCM'
+        }
+        parallel {
+            gupt -> biztalkETL 'retour vers Biztalk ETL'
+            mdm -> biztalkETL 'retour vers Biztalk ETL'
+            pcm -> biztalkETL 'retour vers Biztalk ETL'
+    }
+
+        pcm -> ncg 'transfert vers NCG'
+}
+}

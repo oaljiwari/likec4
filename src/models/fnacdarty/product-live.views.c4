@@ -7,7 +7,7 @@ views {
         include tradeexpress,
         include biztalkEAI,
         include mdm,
-        include mdm.mcm-mirakl,
+        include mcm-mirakl,
         include mdm.ipm12,
     }
 }

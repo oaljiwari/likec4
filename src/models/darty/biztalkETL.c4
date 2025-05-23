@@ -1,0 +1,5 @@
+model {
+    biztalkETL = system 'BizTalk ETL' {
+        description 'ETL BizTalk'
+    }
+}

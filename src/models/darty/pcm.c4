@@ -4,6 +4,7 @@ model{
       Référentiel Produit Hybris
     '
     technology 'Hybris'
+    link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2675441865/PCM
   }
 
   pcm -> catalogmagdarty 'PCMCAT001' {

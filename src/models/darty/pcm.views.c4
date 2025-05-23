@@ -1,0 +1,17 @@
+views {
+    view pcm {
+        title 'Référentiel Produit PCM'
+        group 'Référentiel Produit PCM' {
+            color amber
+            opacity 10%
+            include
+                pcm,
+                mdm,
+                metacat,
+                newref,
+                productlive,
+                frontref, 
+                catalog-es
+        }
+    }
+}
