@@ -1,10 +1,11 @@
-model{
+model {
     pcm = app 'PCM' {
       #hybris #darty #refproduit
     description 'Référentiel Produit Hybris'
     icon https://cdn-icons-png.flaticon.com/512/8787/8787351.png
     technology 'Hybris'
-    link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2675441865/PCM
+    link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2675441865/PCM 'pppp'
+    link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2676588557/NCG 'xxxx'
   }
 
   pcm -> catalogmagdarty 'PCMCAT001' {

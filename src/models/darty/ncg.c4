@@ -3,6 +3,8 @@ model{
         description 'Système de gestion des commandes'
 
         icon https://cdn2.steamgriddb.com/icon_thumb/aeef2e2263e994f0e586670b49f78117.png
+
+        link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2676588557/NCG
     }
     ncg -> pcm 'NCGPCM001' {
         description 'Flux FTP ??'
