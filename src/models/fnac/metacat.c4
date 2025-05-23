@@ -1,5 +1,6 @@
 model {
     metacat = app 'Metacat' {
+        #catalog #fnacdarty
         description 'Application de création, mise à jour, enrichissement des produits et de la navigation pour le e-Commerce MarketPlace'
         technology 'Winforms'
     }

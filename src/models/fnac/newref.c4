@@ -1,7 +1,13 @@
 model{
     newref = app 'NewRef' {
+        #catalog #fnac
         description "Gestion du référentiel,de l'enrichissement et des prix des produits stockés et dématérialisés"
         technology 'Winforms'
+
+        style {
+            color color-fnac
+            icon https://cdn-icons-png.flaticon.com/512/2772/2772128.png
+        }
     }
 
     newref -> metacat 'NEWMET001' 'Incremental NR/MC'

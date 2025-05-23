@@ -80,4 +80,6 @@ specification {
   color color-dartycom #FF0000
   color color-centralweb #FF0000
 
+  color color-fnac #fae492
+
 }
