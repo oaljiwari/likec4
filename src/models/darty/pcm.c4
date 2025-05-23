@@ -2,10 +2,12 @@ model {
     pcm = app 'PCM' {
       #hybris #darty #refproduit
     description 'Référentiel Produit Hybris'
-    icon https://cdn-icons-png.flaticon.com/512/8787/8787351.png
     technology 'Hybris'
-    link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2675441865/PCM 'pppp'
-    link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2676588557/NCG 'xxxx'
+
+    icon https://cdn-icons-png.flaticon.com/512/8787/8787351.png
+    link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2675441865/PCM 'Page principale sur Confluence'
+    link https://gitlab.com/fnacdarty/fdps/dev/teams/dartycommercialite/pod 'Repository Gitlab'
+
   }
 
   pcm -> catalogmagdarty 'PCMCAT001' {
@@ -18,6 +20,14 @@ model {
   
   pcm -> dartycom 'PCMDAR001' {
     description 'Codification envoi vers Darty.com'
+    metadata {
+      prop1 'value1'
+      prop2 'value2'
+      prop3 'value3'
+      prop4 'value4'
+      prop5 'value5'
+      prop6 'value6'    
+    }
   }
 
   pcm -> fnaccom 'PCMFNA001' {
