@@ -1,6 +1,11 @@
 model {
-    dartycom = app 'Darty.com' {
+    dartycom = frontend 'Darty.com' {
         description 'Site e-commerce Darty.com'
+
+        style {
+            color color-dartycom
+            icon https://www.darty.com/static/PU3S/catalog/version_common/styles/images/logos/favicon.png
+        }
     }
     
 }

@@ -1,8 +1,7 @@
 model{
     pcm = app 'PCM' {
-    description '
-      Référentiel Produit Hybris
-    '
+      #hybris #darty #refproduit
+    description 'Référentiel Produit Hybris'
     //icon ../../resources/icons/darty.png
     technology 'Hybris'
     link https://fnacdarty.atlassian.net/wiki/spaces/DARTYWEB/pages/2675441865/PCM

@@ -1,9 +1,13 @@
 model {
-    fnaccom = system 'Fnac.com' {
+  fnaccom = frontend 'Fnac.com' {
+    #fnac #fnaccom
     description 'Le site web de la Fnac'
+    link https://www.fnac.com
+    style {
+      color color-fnaccom
+      icon https://www.fnac.com/favicon.ico
+    }
 
-    //icon ../../resources/icons/fnac.png
-    
     component fnaccomid 'FnacComId' {
       description '
         The Fnac.com ID is the unique
@@ -50,13 +54,13 @@ model {
 }
 
 views {
-    view fnaccom of fnaccom {
+  view fnaccom of fnaccom {
     title "Fnac.com"
     description 'Fnac.com is the website of the Fnac'
     include
       *,
       fnaccom,
       fnaccomid,
-      fnaccomaccount    
+      fnaccomaccount
   }
 }

@@ -6,6 +6,12 @@ specification {
     }
   }
 
+  element frontend {
+    style {
+      shape browser
+    }
+  }
+
   element system {
     style {
       shape rectangle
@@ -55,13 +61,23 @@ specification {
       shape storage
     }
   }
-  element gqlMutation
-  element gqlQuery
-  element lambda
 
   tag deprecated
   tag next
   tag api
   tag db
+  tag darty
+  tag fnac
+  tag fnaccom
+  tag dartycom
+  tag fnacdarty
+  tag hybris
+  tag refproduit
+  tag catalog
+
+
+  color color-fnaccom #d0a813
+  color color-dartycom #FF0000
+  color color-centralweb #FF0000
 
 }

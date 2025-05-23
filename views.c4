@@ -1,25 +1,33 @@
 views {
 
-view index{
-  include *
-}
+  view index {
+    include *
+  }
   view indexWithRefProduit {
     title "Vue d'ensemble avec délimitation des Référentiel produit"
     group 'Référentiel Produit' {
-         color green
-         opacity 20%
+      color green
+      opacity 20%
 
-         include
-            pcm,
-            mdm,
-            metacat,
-            newref,
-            productlive,
-            frontref, 
-            catalog-es
-       }
+      include
+        pcm,
+        mdm,
+        gupt,
+        mcm-mirakl,
+        metacat,
+        newref,
+        productlive,
+        frontref,
+        catalog-es
+    }
+    group 'Sites Web' {
+      color red
+      opacity 20%
+      include
+        fnaccom,
+        dartycom,
+    }
     include
-       *
-       
+      *
   }
 }
